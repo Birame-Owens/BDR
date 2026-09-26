@@ -1,0 +1,6 @@
+node_modules
+dist
+
+# Documents sources (non nécessaires au site)
+*.pdf
+*.docx
