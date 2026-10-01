@@ -29,8 +29,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   <header class="nav" :class="{ scrolled, open }">
     <div class="container nav-inner">
       <a href="#top" class="logo" @click="open = false">
-        <span class="logo-mark">B</span>
-        <span>BDR<span class="logo-dot">.</span><small>Agency</small></span>
+        <img class="logo-image" src="/bdr-logo.jpg" alt="BDR Agency" />
       </a>
 
       <nav class="links" aria-label="Navigation principale">
@@ -92,41 +91,22 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   color: #fff;
-  font-family: var(--display);
-  font-weight: 800;
-  font-size: 1.4rem;
-  letter-spacing: -0.02em;
 }
 
-.logo small {
-  margin-left: 6px;
-  font-family: var(--font);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
-.logo-mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  background: var(--grad);
-  font-size: 1.2rem;
+.logo-image {
+  display: block;
+  width: 132px;
+  height: 48px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #fffaf3;
+  object-fit: contain;
   transition: transform 0.5s cubic-bezier(0.3, 1.6, 0.5, 1);
 }
 
-.logo:hover .logo-mark {
+.logo:hover .logo-image {
   transform: rotate(-12deg) scale(1.08);
-}
-
-.logo-dot {
-  color: var(--coral);
 }
 
 .links {

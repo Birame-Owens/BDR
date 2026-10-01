@@ -13,7 +13,7 @@ const year = new Date().getFullYear()
 
       <div class="cols">
         <div>
-          <a href="#top" class="logo"><span class="mark">B</span> BDR<span class="dot">.</span>Agency</a>
+          <a href="#top" class="logo"><img src="/bdr-logo.jpg" alt="BDR Agency" /></a>
           <p>Communication digitale · Stratégie, contenus, community management et publicité pour les entreprises.</p>
         </div>
 
@@ -76,23 +76,16 @@ const year = new Date().getFullYear()
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--display);
-  font-size: 1.4rem;
-  font-weight: 800;
 }
 
-.mark {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 12px;
-  background: var(--grad);
-}
-
-.dot {
-  color: var(--coral);
+.logo img {
+  display: block;
+  width: 180px;
+  height: 66px;
+  padding: 5px;
+  border-radius: 8px;
+  background: #fffaf3;
+  object-fit: contain;
 }
 
 .cols p {
